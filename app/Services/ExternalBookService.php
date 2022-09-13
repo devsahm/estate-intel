@@ -17,7 +17,7 @@ class ExternalBookService implements ExternalBookContract
     {
          $response = $this->officeAndFire->books($bookName);
 
-         if (count($response) > 0 ) {
+         if ($response) {
             return $response;
          }
          
