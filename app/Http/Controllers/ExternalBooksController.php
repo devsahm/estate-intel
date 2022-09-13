@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Contract\ExternalBookContract;
+use App\Contracts\ExternalBookContract;
 use App\Helpers\ResponseHelper;
 use App\Http\Resources\ExternalBookResource;
 use Illuminate\Http\Request;

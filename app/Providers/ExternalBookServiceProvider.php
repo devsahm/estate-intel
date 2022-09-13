@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Contract\ExternalBookContract;
+use App\Contracts\ExternalBookContract;
 use App\Services\ExternalBookService;
 use Illuminate\Support\ServiceProvider;
 

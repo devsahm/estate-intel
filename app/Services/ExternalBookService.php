@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Contract\ExternalBookContract;
+use App\Contracts\ExternalBookContract;
 use App\Processors\OfficeAndFire;
 use Exception;
 
