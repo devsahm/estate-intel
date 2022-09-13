@@ -32,7 +32,7 @@ class BookController extends Controller
     {
         try {
             $book = $this->bookService->update($request->all(), $id);
-            return ResponseHelper::successWithMessage(BookResource::make($book),200, "The book {$book->name} was updated successfully");
+            return ResponseHelper::successWithMessage(BookResource::make($book), 200, "The book {$book->name} was updated successfully");
         } catch (\Throwable $th) {
             return ResponseHelper::fail($th->getMessage());
         }
@@ -62,11 +62,11 @@ class BookController extends Controller
     }
 
 
-    public function delete(int $id)
+    public function destroy(int $id)
     {
         try {
              $this->bookService->delete($id);
-            return ResponseHelper::successWithMessage([],  204, 'The book ‘My first book’ was deleted successfully');
+            return ResponseHelper::successWithMessage([],  204, 'The book was deleted successfully');
         } catch (\Throwable $th) {
             return ResponseHelper::fail($th->getMessage());
         }

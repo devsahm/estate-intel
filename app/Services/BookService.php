@@ -46,7 +46,7 @@ class BookService
     }
 
 
-    public function show($id)
+    public function show(int $id)
     {
         try {
             return Book::findOrFail($id);
@@ -55,7 +55,7 @@ class BookService
         }
     }
 
-    public function delete($id)
+    public function delete(int $id)
     {
         try {
             $book = Book::findOrFail($id);

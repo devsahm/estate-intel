@@ -28,7 +28,7 @@ Route::prefix('v1')->group(function(){
         Route::post('/', [BookController::class, 'create'])->name('create');
         Route::get('{id}', [BookController::class, 'show'])->name('show');
         Route::patch('{id}', [BookController::class, 'update'])->name('update');
-        Route::delete('{id}', [BookController::class, 'delete'])->name('delete');
+        Route::delete('{id}', [BookController::class, 'destroy'])->name('delete');
     });
     
 });
