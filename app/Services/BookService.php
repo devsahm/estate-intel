@@ -9,11 +9,6 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 class BookService
 {
 
-    public function __construct()
-    {   
-    }
-
-
     public function create(array $params)
     {
         try {
